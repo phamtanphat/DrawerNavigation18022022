@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -10,10 +11,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Toolbar
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#f20" />
+            android:background="@color/teal_200" />
 
         <FrameLayout
             android:id="@+id/fragment_container"
@@ -22,6 +24,7 @@
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
         android:layout_width="300dp"
         android:layout_height="match_parent"
         android:layout_gravity="start" />
