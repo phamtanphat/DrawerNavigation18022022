@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/drawer_layout"
     tools:context=".MainActivity">
 
@@ -24,6 +25,8 @@
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
+        app:menu="@menu/menu_navi"
+        app:headerLayout="@layout/layout_header_navigation"
         android:id="@+id/navigation_view"
         android:layout_width="300dp"
         android:layout_height="match_parent"
